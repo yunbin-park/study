@@ -1,37 +1,16 @@
 import java.util.Scanner;
 
-public class Main {
-
+public class Main{
     public static void main(String[] args){
-         Scanner scanner = new Scanner(System.in);
-         
- 		int time = scanner.nextInt();
- 		int minute = scanner.nextInt();
- 		
- 		int t;
- 		int m;
- 		
- 		if (minute < 45 && time != 0) {
- 			m = 60-(45-minute);
- 			t = time-1;
- 			System.out.println(t);
- 			System.out.println(m);
- 		} else if(minute < 45 && time == 0) {
- 			m = 60-(45-minute);
- 			t = 23;
- 			System.out.println(t);
- 			System.out.println(m);
- 		}
- 		if (minute >= 45 && time != 0) {
- 			m = minute - 45;
- 			t = time;
- 			System.out.println(t);
- 			System.out.println(m);
- 		} else if (minute >= 45 && time == 0) {
- 			m = minute - 45;
- 			t = time;
- 			System.out.println(t);
- 			System.out.println(m);
- 		}
-     }
- }
+        Scanner sc =new Scanner(System.in);
+        int a = sc.nextInt();
+		int b = sc.nextInt();
+
+		while(a!=0&&b!=0) {
+			System.out.println(a+b);
+
+			 a = sc.nextInt();
+			 b = sc.nextInt();
+		}
+    }
+}
