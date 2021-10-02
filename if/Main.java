@@ -2,15 +2,13 @@ import java.util.Scanner;
 
 public class Main{
     public static void main(String[] args){
-        Scanner sc =new Scanner(System.in);
-        int a = sc.nextInt();
-		int b = sc.nextInt();
+        Scanner s =new Scanner(System.in);
 
-		while(a!=0&&b!=0) {
-			System.out.println(a+b);
+        while(s.hasNextInt()){
+            int a = s.nextInt();
+            int b = s.nextInt();
 
-			 a = sc.nextInt();
-			 b = sc.nextInt();
-		}
+            System.out.println(a+b);
+        }
     }
 }
